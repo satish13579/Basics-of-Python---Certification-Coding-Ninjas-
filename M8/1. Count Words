@@ -1,0 +1,8 @@
+from sys import stdin
+import re
+def countWords(string):
+    li=re.findall(" ",string)
+    return(len(li)+1)
+string = stdin.readline().strip();
+count = countWords(string)
+print(count)
