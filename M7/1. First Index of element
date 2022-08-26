@@ -1,0 +1,9 @@
+n=int(input())
+li=[int(x) for x in input().split()]
+key=int(input())
+for i,ele in enumerate(li):
+    if(ele==key):
+        print(i)
+        break
+else:
+    print("-1")
