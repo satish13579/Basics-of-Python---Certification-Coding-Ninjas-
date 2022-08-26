@@ -1,0 +1,7 @@
+from math import factorial as fact
+n=int(input())
+if(n>=0):
+    f=fact(n)
+    print(f)
+else:
+    print("Error")
