@@ -1,0 +1,10 @@
+n=int(input())
+li=[int(x) for x in input().split()]
+k=int(input())
+for z in range(k):
+    temp=[]
+    temp.extend(li[1:n])
+    temp.append(li[0])
+    li=temp
+for i in li:
+    print(i,end=" ")
