@@ -1,0 +1,10 @@
+def sort012(arr):
+    pass
+t = int(input())
+while t > 0:
+    n = int(input())
+    arr = [int(i) for i in input().split()]
+    sort012(arr)
+    arr.sort()
+    print(*arr)
+    t -= 1
