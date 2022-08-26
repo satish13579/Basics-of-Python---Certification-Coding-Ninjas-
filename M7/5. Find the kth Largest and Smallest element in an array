@@ -1,0 +1,21 @@
+def kthSmallestLargest(arr,k):
+    s=set(arr)
+    arr=list(s)
+    arr=sorted(arr)
+    if(len(arr)>=k-1):
+        small=arr[k-1]
+    else:
+        small=-1
+    arr=sorted(arr,reverse=True)
+    if(len(arr)>=k-1):
+        large=arr[k-1]
+    else:
+        large=-1
+    return small,large
+t = int(input())
+while t > 0:
+    n,k = map(int,input().split())
+    arr = [int(i) for i in input().split()]
+    small,large = kthSmallestLargest(arr,k)
+    print(large,small)
+    t -= 1
