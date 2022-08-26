@@ -1,0 +1,12 @@
+from math import floor,ceil
+s=int(input())
+e=int(input())
+step=int(input())
+while(s<=e):
+    print(s,end=" ")
+    celcius=(((s-32)*5)/9)
+    if(celcius<0):
+        print(ceil(celcius))
+    else:
+        print(floor(celcius))
+    s=s+step
