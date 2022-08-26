@@ -1,0 +1,10 @@
+def countBits(n):
+    bi=bin(n)
+    ic=0
+    for i in bi:
+        if(i=='1'):
+            ic+=1
+    return(ic)
+
+n = int(input())
+print(countBits(n))
